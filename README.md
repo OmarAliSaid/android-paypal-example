@@ -60,6 +60,8 @@ node index.js
 Magic happens on port 5000
 ```
 * open Android Studio and import the Android project then go to ***string.xml*** and ***Config.java*** file and do the nessecary changes .
+* add google-services.json file of your firebase project to the android app folder . 
+
 * when you come to the part where u should enter paypal login info to complete the buying process , login with the personl account     previously created for testing then login to <a href="https://www.sandbox.paypal.com/">paypal sandbox</a> with the Business account to see the transactions .<br/>
   
 * That's it you did it :) <br/>
@@ -71,4 +73,22 @@ Magic happens on port 5000
 ##Developed By 
 * Omar Ali
 * omarali0252@gmail.com
-* <a href="https://www.paypal.me/OmarAliSaid">paypal.me/OmarAliSaid</a>
+* <a href="https://www.paypal.me/OmarAliSaid">paypal.me/OmarAliSaid</a> <br/>
+
+##License
+```
+Copyright 2017 Omar Ali
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+```
