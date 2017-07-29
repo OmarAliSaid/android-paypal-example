@@ -49,7 +49,7 @@ npm install
   + create new App to get the  ***client_id*** and ***client_secret*** <br/>
   + create two accounts ( Business - Personal ) to be used for testing .
   
-* open index.js file and do the necessary changes . 
+* open ***index.js*** file and do the necessary changes . 
 
 
 ### Running the tests
