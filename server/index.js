@@ -15,7 +15,7 @@ paypal.configure({
 
 firebase.initializeApp({
   credential: firebase.credential.cert(serviceAccount),
-  databaseURL: 'https://frankz-supplier.firebaseio.com'
+  databaseURL: "https://<DATABASE_NAME>.firebaseio.com"
 });
 
 // configure body parser
