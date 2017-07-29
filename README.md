@@ -2,9 +2,10 @@
 # ScreenShots
 
 <p align="center">
-  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic1.jpeg" width="250"/>
-  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic2.jpeg" width="250"/>
-  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic3.jpeg" width="250"/>
+  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic1.jpeg" width="200"/>
+  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic2.jpeg" width="200"/>
+  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic3.jpeg" width="200"/>
+  <img src="https://github.com/OmarAliSaid/android-paypal-example/blob/master/ScreenShots/pic4.jpeg" width="200"/>
 </p>
 
 
