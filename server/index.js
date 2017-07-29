@@ -5,12 +5,12 @@ var express = require('express');
 var app = express();
 
 // Initialize the app with a service account, granting admin privileges
-var serviceAccount = require("frankz-supplier-firebase-admin.json");
+var serviceAccount = require("path/to/serviceAccountKey.json");
 
 paypal.configure({
   'mode': 'sandbox', //sandbox or live
-  'client_id': 'Af6nnED-FUpyvKezG6HqlKP3ZM2vNlHS9yxv7reYC_bqTnU1WffsfglJxPRPYtJWNt9-KqfY2dx_KzQM',
-  'client_secret': 'ENLI79Np4N4brm5Tisw4ZSe62hK3qRxtXoj3h3Ix4jPUWYsQS8Ass6JUdhPTGTA-r0GqM3Y-6HqwcnIg'
+  'client_id': 'REPLACE WITH PAYPAL APP CLIENT_ID',
+  'client_secret': 'REPLACE WITH PAYPAL APP SECRET'
 });
 
 firebase.initializeApp({
@@ -49,13 +49,10 @@ router.route('/verify_mobile_payment')
 
         paypal.payment.get(payment_id, function (error, payment) {
             if (error) {
-                console.log(error);
                 res.json({"msg": error , "state": error.status});
                 return ;
             }
-            
-            console.log(payment);
-            
+                        
             var payment_state = payment.state;
             var transaction_server = payment.transactions[0];
             var amount_server = transaction_server.amount.total;
@@ -73,7 +70,6 @@ router.route('/verify_mobile_payment')
             }
             
             if(currency_server !== currency_client){
-               console.log(currency_server + "    " + currency_client)
                res.json( { "msg" : "Payment currency doesn't matched. " , "state" : 200 } );
                return ; 
             }
@@ -116,7 +112,6 @@ router.route("/products").get(function(req,res){
         res.json(obj);
         
     }, function (errorObject) {
-        console.log("The read failed: " + errorObject.code);
         res.json({"msg":errorObject.message , "status":errorObject.code});
     });
 });
@@ -144,19 +139,12 @@ function insertPayment(paymentID , uid , c_time , p_state , amount_server , curr
 function insertItemSales(paymentID, transaction, state){
     var item_list = transaction.item_list;
     var items = item_list.items;
-    console.log("item_list : "+items);
     
     items.forEach(function(item){
-        console.log(item);
-
         var quantity = item.quantity;
         var price = item.price;
         var sku = item.sku;
-        
-        console.log("sku "+sku);
-        console.log("price "+price);
-        console.log("quantity "+quantity);
-        
+       
         var new_sale_key = firebase.database().ref("/").child("sales").push().key;
         firebase.database().ref('sales/'+new_sale_key).set({ 
             firebase_payment_id : paymentID , 
