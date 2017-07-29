@@ -37,9 +37,11 @@ npm install
 
 
 * assuming you already created firebase project :- <br/>
+  + Import ***database.sql*** file in project folder to your firebase project database.
   + Enable Facebook Authentication from firebase project dashboard . 
-  + Project Setting -> SERVICE ACCOUNTS -> Firebase Admin SDK -> GENERATE NEW PRIVATE KEY <br/>
-  this will create and download .json file containing the required credentials for firebase admin . <br/>
+  + Generate New Private Key : <br/> 
+    Project Setting -> SERVICE ACCOUNTS -> Firebase Admin SDK -> GENERATE NEW PRIVATE KEY <br/>
+    this will create and download .json file containing the required credentials for firebase admin . <br/>
   + ***Copy*** the downloaded file into ***node_modules*** folder.
 
 * go to <a href="https://developer.paypal.com/developer/applications/">PayPal developer</a> :- <br/>
