@@ -37,7 +37,7 @@ npm install
 
 
 * assuming you already created firebase project :- <br/>
-  + Import ***database.sql*** file in project folder to your firebase project database.
+  + Import ***database.json*** file in project folder to your firebase project database.
   + Enable Facebook Authentication from firebase project dashboard . 
   + Generate New Private Key : <br/> 
     Project Setting -> SERVICE ACCOUNTS -> Firebase Admin SDK -> GENERATE NEW PRIVATE KEY <br/>
