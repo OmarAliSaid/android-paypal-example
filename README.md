@@ -59,7 +59,7 @@ node index.js
 ```
 Magic happens on port 5000
 ```
-* open Android Studio and import the Android project then go to ***string.xml*** and ***Config.java*** file and do the nessecary changes .
+* open Android Studio and import the Android project then go to ***strings.xml*** and ***Config.java*** file and do the nessecary changes .
 * add google-services.json file of your firebase project to the android app folder . 
 
 * when you come to the part where u should enter paypal login info to complete the buying process , login with the personl account     previously created for testing then login to <a href="https://www.sandbox.paypal.com/">paypal sandbox</a> with the Business account to see the transactions .<br/>
