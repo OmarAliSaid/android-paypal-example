@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_product_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:scaleType="fitCenter" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/productImage"
+            android:padding="5dp"
+            android:textColor="@color/lbl_product_name"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:layout_toRightOf="@id/productImage"
+            android:padding="5dp"
+            android:textColor="@color/lbl_product_description" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productDescription"
+            android:layout_toRightOf="@id/productImage"
+            android:padding="5dp"
+            android:textColor="@color/lbl_product_description" />
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/productPrice"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/productImage"
+            android:background="#94df81"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/add_to_cart"
+            android:textColor="#FFFF" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

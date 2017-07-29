@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9a0026</color>
+    <color name="colorPrimaryDark">#67001a</color>
+    <color name="colorAccent">#67001a</color>
+    <color name="primary_text">#ffffff</color>
+    <color name="btn_bg_checkout">#428bca</color>
+    <color name="list_divider">#dedede</color>
+    <color name="white">#ffffff</color>
+    <color name="lbl_product_name">#333333</color>
+    <color name="lbl_product_description">#444444</color>
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_btn_join">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+</resources>

@@ -1,0 +1,24 @@
+{
+  "name": "paypal-backend-example",
+  "version": "0.2.6",
+  "description": "paypal backend to verify payments and store sales in firebase",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.15.2",
+    "firebase-admin": "^4.0.3",
+    "paypal-rest-sdk":"1.7.1",
+    "body-parser":"1.17.2"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

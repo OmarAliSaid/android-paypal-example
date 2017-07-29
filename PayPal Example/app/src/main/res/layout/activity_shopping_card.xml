@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/content_shopping_card"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#faf7f7"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="7dp"
+android:paddingRight="7dp"
+android:paddingTop="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_empty_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?android:attr/listPreferredItemHeight"
+            android:layout_marginBottom="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:text="You have no items in the cart"/>
+
+        <ImageView
+            android:id="@+id/iv_empty_cart"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="gone"
+            android:layout_marginBottom="?android:attr/listPreferredItemHeight"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add_shopping_cart_black_24dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/card_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/label_check_out"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_buy"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,31 @@
+{
+  "payments" : {
+
+      "products" : {
+        "sku_HG_0001" : {
+          "description" : "Midnight Blue, with 32 GB",
+          "image" : "http://api.androidhive.info/images/nexus5.jpeg",
+          "name" : "Google Nexus 6",
+          "price" : 650.5
+        },
+        "sku_HG_0002" : {
+          "description" : "USB 2.0, 16 GB, Black & Red, Read 17.62 MB/sec, Write 4.42 MB/sec",
+          "image" : "http://api.androidhive.info/images/sandisk.jpeg",
+          "name" : "Sandisk Cruzer Blade 16 GB Flash Pendrive",
+          "price" : 45
+        },
+        "sku_HG_0003" : {
+          "description" : "Prestige Induction Starter Pack Deluxe Plus Pressure Cooker 5 L",
+          "image" : "http://api.androidhive.info/images/prestige.jpeg",
+          "name" : "Prestige Pressure Cooker",
+          "price" : 32.5
+        },
+        "sku_HG_0004" : {
+          "description" : "100% egyption cotton , available in all sizes",
+          "image" : "https://firebasestorage.googleapis.com/v0/b/frankz-supplier.appspot.com/o/231%2Cwidth%3D300%2Cheight%3D300%2CbackgroundColor%3Dffffff.jpg?alt=media&token=ac20b471-0c00-403a-8386-e78d6400c37c",
+          "name" : "T-shirt",
+          "price" : 5
+        }
+      }
+  }
+}
