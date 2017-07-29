@@ -86,6 +86,7 @@ public class ShoppingCardActivity extends AppCompatActivity implements ShoppingC
     @BindView(R.id.iv_empty_cart)ImageView iv_empty_cart;
     @BindView(R.id.tv_empty_cart)TextView tv_empty_cart;
     @BindString(R.string.label_continue_shopping) String label_continue_shopping;
+    @BindString(R.string.local_host)String local_host;
 
     ShoppingCardRecycleAdapter mCardRecycleAdapter;
     ArrayList<Product> mCardItems;
@@ -158,7 +159,7 @@ public class ShoppingCardActivity extends AppCompatActivity implements ShoppingC
 
     private void build_API_Service() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://frankz.herokuapp.com/")
+                .baseUrl(local_host)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
