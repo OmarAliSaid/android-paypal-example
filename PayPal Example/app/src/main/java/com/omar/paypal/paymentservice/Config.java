@@ -5,8 +5,9 @@ package com.omar.paypal.paymentservice;
  */
 
 public class Config {
+    //TODO : Replace with your PayPal app client_id
     // note that these credentials will differ between live & sandbox environments.
-    public static final String CONFIG_CLIENT_ID = "Af6nnED-FUpyvKezG6HqlKP3ZM2vNlHS9yxv7reYC_bqTnU1WffsfglJxPRPYtJWNt9-KqfY2dx_KzQM";
+    public static final String CONFIG_CLIENT_ID = "PayPal app client_id";
 
     public static final String DEFAULT_CURRENCY = "USD";
 }
