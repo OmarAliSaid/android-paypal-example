@@ -66,16 +66,16 @@ Magic happens on port 5000
   
 * That's it you did it :) <br/>
 
-##Dependencies
+#### Dependencies
 
 * Android-ActionItemBadge - https://github.com/mikepenz/Android-ActionItemBadge  <br/>
 
-##Developed By 
+#### Developed By 
 * Omar Ali
 * omarali0252@gmail.com
 * <a href="https://www.paypal.me/OmarAliSaid">paypal.me/OmarAliSaid</a> <br/>
 
-##License
+#### License
 ```
 Copyright 2017 Omar Ali
 
