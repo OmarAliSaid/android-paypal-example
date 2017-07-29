@@ -49,6 +49,8 @@ public class ProductsActivity extends AppCompatActivity implements ProductListAd
     MenuItem mItem;
 
     @BindView(R.id.products_recycle_view)RecyclerView rv_products;
+    @BindString(R.string.local_host)String local_host;
+
     // Progress dialog
     private ProgressDialog pDialog;
     ArrayList<Product>cardItems = new ArrayList<>();
@@ -87,7 +89,7 @@ public class ProductsActivity extends AppCompatActivity implements ProductListAd
      */
     private void build_API_Service() {
        retrofit = new Retrofit.Builder()
-                .baseUrl("https://frankz.herokuapp.com/")
+                .baseUrl(local_host)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
